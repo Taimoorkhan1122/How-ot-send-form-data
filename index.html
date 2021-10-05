@@ -24,9 +24,8 @@
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         var formdata = new FormData(form);
-        console.log("form data => ", new URLSearchParams(formdata).toString());
         console.log("submiting data");
-        fetch("http://192.168.1.101:3333/form", {
+        fetch("http://localhost:3333/form", {
           method: "POST",
           mode: "cors",
           headers: {
